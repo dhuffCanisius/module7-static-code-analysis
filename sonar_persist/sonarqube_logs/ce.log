@@ -1,0 +1,351 @@
+2025.02.27 00:26:30 INFO  ce[][o.s.p.ProcessEntryPoint] Starting Compute Engine
+2025.02.27 00:26:30 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2025.02.27 00:26:31 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2025.02.27 00:26:31 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
+2025.02.27 00:26:31 INFO  ce[][c.z.h.p.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://127.0.0.1:9092/sonar user=
+2025.02.27 00:26:31 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
+2025.02.27 00:26:31 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2025.02.27 00:26:31 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2025.02.27 00:26:32 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2025.02.27 00:26:32 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2025.02.27 00:26:32 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is started
+2025.02.27 00:51:00 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=module7 | type=REPORT | id=AZVE4qMBGNAGwVx6Gmo9 | submitter=admin
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=21ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=9ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=42ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=102ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=6 | status=SUCCESS | time=74ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=7ms
+2025.02.27 00:51:01 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2025.02.27 00:51:04 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=3225ms
+2025.02.27 00:51:04 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load file hashes and statuses | status=SUCCESS | time=61ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=31ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=20ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=4 | dbFiles=4 | addedFiles=0 | status=SUCCESS | time=30ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Detect file moves in Pull Request scope | status=SUCCESS | time=0ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=11ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=66ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=226ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=6ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=2ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=2ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=2ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=27ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=2ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=5ms
+2025.02.27 00:51:05 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=27ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=594ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=26ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=4ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=5ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=8ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=2ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist scanner analysis cache | status=SUCCESS | time=18ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=27ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=24ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=11ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=52 | status=SUCCESS | time=67ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=311 | status=SUCCESS | time=260ms
+2025.02.27 00:51:06 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=1ms
+2025.02.27 00:51:12 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE0i17Lt8tGZ6K5h], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:51:18 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AZVE4tsGhLbM4yn2Qiaz], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:51:23 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE6b17Lt8tGZ6K5j], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=16520ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=8.4 kB | inserts=3 | updates=13 | merged=0 | status=SUCCESS | time=56ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Delete issue changes | changes=0 | status=SUCCESS | time=0ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=3ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=26ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=38ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=10ms
+2025.02.27 00:51:23 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=55ms
+2025.02.27 00:51:28 ERROR ce[][o.s.s.es.BulkIndexer] index [projectmeasures], type [auth], id [AYbda8LJhdEuGBVawCYV], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [projectmeasures] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:51:29 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=FAILED | time=5335ms
+2025.02.27 00:51:29 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=9ms
+2025.02.27 00:51:29 ERROR ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.CeWorkerImpl] Failed to execute task AZVE4qMBGNAGwVx6Gmo9
+java.lang.IllegalStateException: Unrecoverable indexation failures: 1 errors among 1 requests. Check Elasticsearch logs for further details.
+	at org.sonar.server.es.IndexingListener$1.onFinish(IndexingListener.java:42)
+	at org.sonar.server.es.BulkIndexer.stop(BulkIndexer.java:131)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.doIndex(ProjectMeasuresIndexer.java:158)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.indexOnAnalysis(ProjectMeasuresIndexer.java:87)
+	at org.sonar.ce.task.projectanalysis.step.IndexAnalysisStep.execute(IndexAnalysisStep.java:45)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeStep(ComputationStepExecutor.java:79)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeSteps(ComputationStepExecutor.java:70)
+	at org.sonar.ce.task.step.ComputationStepExecutor.execute(ComputationStepExecutor.java:57)
+	at org.sonar.ce.task.projectanalysis.taskprocessor.ReportTaskProcessor.process(ReportTaskProcessor.java:75)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.executeTask(CeWorkerImpl.java:212)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.run(CeWorkerImpl.java:194)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.findAndProcessTask(CeWorkerImpl.java:160)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$TrackRunningState.get(CeWorkerImpl.java:135)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:87)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:53)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025.02.27 00:51:29 INFO  ce[AZVE4qMBGNAGwVx6Gmo9][o.s.c.t.CeWorkerImpl] Executed task | project=module7 | type=REPORT | id=AZVE4qMBGNAGwVx6Gmo9 | submitter=admin | status=FAILED | time=28686ms
+2025.02.27 00:54:14 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=module7 | type=REPORT | id=AZVE5ZnXGNAGwVx6Gmo- | submitter=admin
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=17ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=7ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=7ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=6 | status=SUCCESS | time=9ms
+2025.02.27 00:54:14 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=7830ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load file hashes and statuses | status=SUCCESS | time=11ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=7ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=9ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=4 | dbFiles=4 | addedFiles=0 | status=SUCCESS | time=3ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Detect file moves in Pull Request scope | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=1ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=4ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=18ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=1ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=1ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=8ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=233ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=7ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=4ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=3ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=0ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist scanner analysis cache | status=SUCCESS | time=44ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=25ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=2ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=5ms
+2025.02.27 00:54:22 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=52 | status=SUCCESS | time=13ms
+2025.02.27 00:54:23 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=311 | status=SUCCESS | time=280ms
+2025.02.27 00:54:23 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2025.02.27 00:54:28 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE0i17Lt8tGZ6K5h], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:54:33 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AZVE4tsGhLbM4yn2Qiaz], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:54:39 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE6b17Lt8tGZ6K5j], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=16087ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=0 bytes | inserts=0 | updates=0 | merged=0 | status=SUCCESS | time=6ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Delete issue changes | changes=0 | status=SUCCESS | time=0ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=3ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=4ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=8ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=2ms
+2025.02.27 00:54:39 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=18ms
+2025.02.27 00:54:44 ERROR ce[][o.s.s.es.BulkIndexer] index [projectmeasures], type [auth], id [AYbda8LJhdEuGBVawCYV], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [projectmeasures] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 00:54:44 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=FAILED | time=5303ms
+2025.02.27 00:54:44 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=4ms
+2025.02.27 00:54:44 ERROR ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.CeWorkerImpl] Failed to execute task AZVE5ZnXGNAGwVx6Gmo-
+java.lang.IllegalStateException: Unrecoverable indexation failures: 1 errors among 1 requests. Check Elasticsearch logs for further details.
+	at org.sonar.server.es.IndexingListener$1.onFinish(IndexingListener.java:42)
+	at org.sonar.server.es.BulkIndexer.stop(BulkIndexer.java:131)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.doIndex(ProjectMeasuresIndexer.java:158)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.indexOnAnalysis(ProjectMeasuresIndexer.java:87)
+	at org.sonar.ce.task.projectanalysis.step.IndexAnalysisStep.execute(IndexAnalysisStep.java:45)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeStep(ComputationStepExecutor.java:79)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeSteps(ComputationStepExecutor.java:70)
+	at org.sonar.ce.task.step.ComputationStepExecutor.execute(ComputationStepExecutor.java:57)
+	at org.sonar.ce.task.projectanalysis.taskprocessor.ReportTaskProcessor.process(ReportTaskProcessor.java:75)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.executeTask(CeWorkerImpl.java:212)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.run(CeWorkerImpl.java:194)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.findAndProcessTask(CeWorkerImpl.java:160)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$TrackRunningState.get(CeWorkerImpl.java:135)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:87)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:53)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025.02.27 00:54:44 INFO  ce[AZVE5ZnXGNAGwVx6Gmo-][o.s.c.t.CeWorkerImpl] Executed task | project=module7 | type=REPORT | id=AZVE5ZnXGNAGwVx6Gmo- | submitter=admin | status=FAILED | time=30313ms
+2025.02.27 01:02:29 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=module7 | type=REPORT | id=AZVE7SksGNAGwVx6GmpA | submitter=admin
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=13ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=5ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=10ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=6ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=6 | status=SUCCESS | time=8ms
+2025.02.27 01:02:29 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=1ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=2358ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load file hashes and statuses | status=SUCCESS | time=8ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=5ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=3ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=4 | dbFiles=4 | addedFiles=0 | status=SUCCESS | time=3ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Detect file moves in Pull Request scope | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=1ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=2ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=13ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=2ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=55ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=10ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=3ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=1ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist scanner analysis cache | status=SUCCESS | time=13ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=9ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=4ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=7ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=52 | status=SUCCESS | time=23ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=315 | status=SUCCESS | time=60ms
+2025.02.27 01:02:32 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2025.02.27 01:02:37 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE0i17Lt8tGZ6K5h], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:02:43 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AZVE4tsGhLbM4yn2Qiaz], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:02:48 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE6b17Lt8tGZ6K5j], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=15912ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=6.5 kB | inserts=1 | updates=10 | merged=0 | status=SUCCESS | time=23ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Delete issue changes | changes=0 | status=SUCCESS | time=0ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=2ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=3ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=10ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=1ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=2ms
+2025.02.27 01:02:48 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=15ms
+2025.02.27 01:02:53 ERROR ce[][o.s.s.es.BulkIndexer] index [projectmeasures], type [auth], id [AYbda8LJhdEuGBVawCYV], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [projectmeasures] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:02:53 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=FAILED | time=5340ms
+2025.02.27 01:02:53 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=5ms
+2025.02.27 01:02:53 ERROR ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.CeWorkerImpl] Failed to execute task AZVE7SksGNAGwVx6GmpA
+java.lang.IllegalStateException: Unrecoverable indexation failures: 1 errors among 1 requests. Check Elasticsearch logs for further details.
+	at org.sonar.server.es.IndexingListener$1.onFinish(IndexingListener.java:42)
+	at org.sonar.server.es.BulkIndexer.stop(BulkIndexer.java:131)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.doIndex(ProjectMeasuresIndexer.java:158)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.indexOnAnalysis(ProjectMeasuresIndexer.java:87)
+	at org.sonar.ce.task.projectanalysis.step.IndexAnalysisStep.execute(IndexAnalysisStep.java:45)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeStep(ComputationStepExecutor.java:79)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeSteps(ComputationStepExecutor.java:70)
+	at org.sonar.ce.task.step.ComputationStepExecutor.execute(ComputationStepExecutor.java:57)
+	at org.sonar.ce.task.projectanalysis.taskprocessor.ReportTaskProcessor.process(ReportTaskProcessor.java:75)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.executeTask(CeWorkerImpl.java:212)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.run(CeWorkerImpl.java:194)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.findAndProcessTask(CeWorkerImpl.java:160)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$TrackRunningState.get(CeWorkerImpl.java:135)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:87)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:53)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025.02.27 01:02:53 INFO  ce[AZVE7SksGNAGwVx6GmpA][o.s.c.t.CeWorkerImpl] Executed task | project=module7 | type=REPORT | id=AZVE7SksGNAGwVx6GmpA | submitter=admin | status=FAILED | time=24196ms
+2025.02.27 01:07:03 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=module7 | type=REPORT | id=AZVE8VhdGNAGwVx6GmpB | submitter=admin
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=9ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=4ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=9ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=6 | status=SUCCESS | time=9ms
+2025.02.27 01:07:03 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=2792ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load file hashes and statuses | status=SUCCESS | time=14ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=5ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=4ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=4 | dbFiles=4 | addedFiles=0 | status=SUCCESS | time=3ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Detect file moves in Pull Request scope | status=SUCCESS | time=0ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=2ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=20ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=8ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=34ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=2ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=1ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist scanner analysis cache | status=SUCCESS | time=19ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=8ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=2ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=3ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=52 | status=SUCCESS | time=15ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=315 | status=SUCCESS | time=287ms
+2025.02.27 01:07:06 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2025.02.27 01:07:12 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AYbdfE0i17Lt8tGZ6K5h], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:07:17 ERROR ce[][o.s.s.es.BulkIndexer] index [rules], type [rule], id [AZVE4tsGhLbM4yn2Qiaz], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [rules] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=10710ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=1.3 kB | inserts=0 | updates=3 | merged=0 | status=SUCCESS | time=9ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Delete issue changes | changes=0 | status=SUCCESS | time=0ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=2ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=4ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=16ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=1ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=3ms
+2025.02.27 01:07:17 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=17ms
+2025.02.27 01:07:22 ERROR ce[][o.s.s.es.BulkIndexer] index [projectmeasures], type [auth], id [AYbda8LJhdEuGBVawCYV], message [ElasticsearchException[Elasticsearch exception [type=cluster_block_exception, reason=index [projectmeasures] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];]]]
+2025.02.27 01:07:22 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=FAILED | time=5291ms
+2025.02.27 01:07:22 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=4ms
+2025.02.27 01:07:22 ERROR ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.CeWorkerImpl] Failed to execute task AZVE8VhdGNAGwVx6GmpB
+java.lang.IllegalStateException: Unrecoverable indexation failures: 1 errors among 1 requests. Check Elasticsearch logs for further details.
+	at org.sonar.server.es.IndexingListener$1.onFinish(IndexingListener.java:42)
+	at org.sonar.server.es.BulkIndexer.stop(BulkIndexer.java:131)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.doIndex(ProjectMeasuresIndexer.java:158)
+	at org.sonar.server.measure.index.ProjectMeasuresIndexer.indexOnAnalysis(ProjectMeasuresIndexer.java:87)
+	at org.sonar.ce.task.projectanalysis.step.IndexAnalysisStep.execute(IndexAnalysisStep.java:45)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeStep(ComputationStepExecutor.java:79)
+	at org.sonar.ce.task.step.ComputationStepExecutor.executeSteps(ComputationStepExecutor.java:70)
+	at org.sonar.ce.task.step.ComputationStepExecutor.execute(ComputationStepExecutor.java:57)
+	at org.sonar.ce.task.projectanalysis.taskprocessor.ReportTaskProcessor.process(ReportTaskProcessor.java:75)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.executeTask(CeWorkerImpl.java:212)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$ExecuteTask.run(CeWorkerImpl.java:194)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.findAndProcessTask(CeWorkerImpl.java:160)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl$TrackRunningState.get(CeWorkerImpl.java:135)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:87)
+	at org.sonar.ce.taskprocessor.CeWorkerImpl.call(CeWorkerImpl.java:53)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025.02.27 01:07:22 INFO  ce[AZVE8VhdGNAGwVx6GmpB][o.s.c.t.CeWorkerImpl] Executed task | project=module7 | type=REPORT | id=AZVE8VhdGNAGwVx6GmpB | submitter=admin | status=FAILED | time=19537ms

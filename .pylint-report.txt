@@ -1,0 +1,12 @@
+************* Module cyb600_module7.bug
+cyb600_module7/bug.py:14: [W0311(bad-indentation), ] Bad indentation. Found 12 spaces, expected 8
+cyb600_module7/bug.py:13: [R1705(no-else-return), unlock_the_locks] Unnecessary "elif" after "return", remove the leading "el" from "elif"
+************* Module cyb600_module7.code_smells
+cyb600_module7/code_smells.py:16: [C0304(missing-final-newline), ] Final newline missing
+cyb600_module7/code_smells.py:4: [C0116(missing-function-docstring), check_if_prime] Missing function or method docstring
+************* Module cyb600_module7.vulnerability
+cyb600_module7/vulnerability.py:4: [W4901(deprecated-module), ] Deprecated module 'crypt'
+
+------------------------------------------------------------------
+Your code has been rated at 8.28/10 (previous run: 7.93/10, +0.34)
+
